@@ -4,6 +4,7 @@ SRC_DIR ?= $(CURDIR)
 LIST= \
 	vim \
 	bash \
+	ssh \
 
 
 .PHONY. : all install
@@ -27,6 +28,18 @@ vim-install : $(HOME_DIR)/.vimrc
 
 $(HOME_DIR)/.vimrc : $(SRC_DIR)/vim/rc.txt
 	ln -fs $< $@
-	
+
+# SSH setup
+.PHONY. : ssh ssh-install
+
+ssh :
+ssh-install : $(HOME_DIR)/.ssh/config.d $(HOME_DIR)/.ssh/config.d/hosts 
+
+$(HOME_DIR)/.ssh/config.d/hosts : $(SRC_DIR)/ssh/hosts $(HOME_DIR)/.ssh/config.d
+	ln -fs $< $@
+	@echo "!! Please add 'include config.d/hosts' to $(HOME_DIR)/.ssh/config !!"
+
+$(HOME_DIR)/.ssh/config.d :
+	mkdir -p $@
 
 

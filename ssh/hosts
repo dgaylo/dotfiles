@@ -1,0 +1,37 @@
+# MIT Servers
+Host Athena athena
+  HostName athena.dialup.mit.edu
+  User dgaylo
+Host Scripts scripts
+  Hostname scripts.mit.edu
+  User dgaylo
+  Port 22
+# VFRL
+Host Neptune neptune
+  HostName vfrl.mit.edu
+  User dgaylo
+  Port 22040
+Host Jeeves jeeves
+  HostName vfrl.mit.edu
+  User dgaylo
+  Port 22099
+Host Impact impact
+  HostName vfrl.mit.edu
+  User dgaylo
+  Port 22017
+# Personal
+Host laptop dgaylo-laptop
+  HostName dgaylo-laptop.mit.edu
+  User gaylo
+  Port 2227
+Host github.com github
+  user git
+  Hostname github.com
+# HPC Servers
+Host Gaffney gaffney
+  Hostname gaffney.navydsrc.hpc.mil
+  User dgaylo
+Host Koehr koehr
+  Hostname koehr.navydsrc.hpc.mil
+  User dgaylo
+
