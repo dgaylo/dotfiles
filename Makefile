@@ -37,6 +37,7 @@ ssh-install : $(HOME_DIR)/.ssh/config.d $(HOME_DIR)/.ssh/config.d/hosts
 
 $(HOME_DIR)/.ssh/config.d/hosts : $(SRC_DIR)/ssh/hosts $(HOME_DIR)/.ssh/config.d
 	ln -fs $< $@
+	chmod 600 $<
 	@echo "!! Please add 'include config.d/hosts' to $(HOME_DIR)/.ssh/config !!"
 
 $(HOME_DIR)/.ssh/config.d :
