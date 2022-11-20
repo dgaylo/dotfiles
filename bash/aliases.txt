@@ -1,6 +1,7 @@
 alias cls="clear"
 alias la="ls -a"
 alias ll="ls -l"
+alias lla="ls -la"
 
 if [ -f ~/.bash_aliases_local ]; then
 	source .bash_aliases_local
