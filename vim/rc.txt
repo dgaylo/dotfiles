@@ -85,3 +85,5 @@ set noerrorbells visualbell t_vb=
 nnoremap <S-j> :m .+1<CR>==
 nnoremap <S-k> :m .-2<CR>==
 
+" let fortran have tabs
+let fortran_have_tabs=1
