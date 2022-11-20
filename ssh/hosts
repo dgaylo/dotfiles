@@ -10,18 +10,18 @@ Host SuperCloud supercloud
    Hostname txe1-login.mit.edu
    User dgaylo
 # VFRL
-Host Neptune neptune
-  HostName vfrl.mit.edu
-  User dgaylo
-  Port 22040
-Host Jeeves jeeves
-  HostName vfrl.mit.edu
-  User dgaylo
-  Port 22099
-Host Impact impact
-  HostName vfrl.mit.edu
-  User dgaylo
-  Port 22017
+#Host Neptune neptune
+#  HostName vfrl.mit.edu
+#  User dgaylo
+#  Port 22040
+#Host Jeeves jeeves
+#  HostName vfrl.mit.edu
+#  User dgaylo
+#  Port 22099
+#Host Impact impact
+#  HostName vfrl.mit.edu
+#  User dgaylo
+#  Port 22017
 # Personal
 Host laptop dgaylo-laptop
   HostName dgaylo-laptop.mit.edu
