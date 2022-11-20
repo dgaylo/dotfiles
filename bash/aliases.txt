@@ -1,3 +1,4 @@
+# .bash_aliases
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -15,6 +16,9 @@ alias cls="clear"
 alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
+
+# typos
+alias gti='git'
 
 if [ -f ~/.bash_aliases_local ]; then
 	source ~/.bash_aliases_local
