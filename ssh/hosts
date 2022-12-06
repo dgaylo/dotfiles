@@ -22,6 +22,10 @@ Host Impact impact
   HostName vfrl.mit.edu
   User dgaylo
   Port 22017
+Host Impact-External impact-external
+  HostName vfrl-external.mit.edu
+  User dgaylo
+  Port 22017
 # Personal
 Host laptop dgaylo-laptop
   HostName dgaylo-laptop.mit.edu
