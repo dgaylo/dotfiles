@@ -15,9 +15,13 @@ Host Neptune neptune
   User dgaylo
   Port 22040
 Host Jeeves jeeves
-  HostName vfrl.mit.edu
+  ProxyJump Impact
+  HostName jeeves.vfrl.local
   User dgaylo
-  Port 22099
+Host Laozi laozi
+  ProxyJump Impact
+  HostName laozi.vfrl.local
+  User dgaylo
 Host Impact impact
   HostName vfrl.mit.edu
   User dgaylo
