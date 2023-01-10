@@ -17,6 +17,9 @@ alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
 
+# alias for dotfile management (inspired by https://mitxela.com/projects/dotfiles_management)
+alias dotfiles='git -C $HOME/.dotfiles' 
+
 # typos
 alias gti='git'
 
