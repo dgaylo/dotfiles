@@ -18,10 +18,18 @@ Host SuperCloud supercloud
 #  HostName vfrl.mit.edu
 #  User dgaylo
 #  Port 22099
+#Host Laozi laozi
+#  ProxyJump Impact
+#  HostName laozi.vfrl.local
+#  User dgaylo
 #Host Impact impact
 #  HostName vfrl.mit.edu
 #  User dgaylo
 #  Port 22017
+Host Impact-External impact-external
+  HostName vfrl-external.mit.edu
+  User dgaylo
+  Port 22017
 # Personal
 Host laptop dgaylo-laptop
   HostName dgaylo-laptop.mit.edu
