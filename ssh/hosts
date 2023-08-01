@@ -45,6 +45,9 @@ Host Gaffney gaffney
 Host Excalibur excalibur
   Hostname excalibur.arl.hpc.mil
   User dgaylo
-Host Koehr koehr
-  Hostname koehr.navydsrc.hpc.mil
-  User dgaylo
+host Koehr koehr
+  hostname koehr.navydsrc.hpc.mil
+  user dgaylo
+host Nautilus nautilus
+  hostname nautilus.navydsrc.hpc.mil
+  user dgaylo
