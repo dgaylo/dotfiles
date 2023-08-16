@@ -42,12 +42,16 @@ Host github.com github
 Host Gaffney gaffney
   Hostname gaffney.navydsrc.hpc.mil
   User dgaylo
+  LogLevel error
 Host Excalibur excalibur
   Hostname excalibur.arl.hpc.mil
   User dgaylo
+  LogLevel error
 host Koehr koehr
   hostname koehr.navydsrc.hpc.mil
   user dgaylo
+  LogLevel error
 host Nautilus nautilus
   hostname nautilus.navydsrc.hpc.mil
   user dgaylo
+  LogLevel error
