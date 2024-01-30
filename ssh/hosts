@@ -55,3 +55,7 @@ host Nautilus nautilus
   hostname nautilus.navydsrc.hpc.mil
   user dgaylo
   LogLevel error
+host Carpenter carpenter
+  hostname carpenter.erdc.hpc.mil
+  user dgaylo
+  LogLevel error
