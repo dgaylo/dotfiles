@@ -40,10 +40,12 @@ Host github.com github
   Hostname github.com
 # HPC Servers
 host Nautilus nautilus
+  GSSAPIDelegateCredentials yes
   hostname nautilus.navydsrc.hpc.mil
   user dgaylo
   LogLevel error
 host Carpenter carpenter
+  GSSAPIDelegateCredentials yes
   hostname carpenter.erdc.hpc.mil
   user dgaylo
   LogLevel error
