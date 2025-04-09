@@ -12,6 +12,9 @@ set shortmess+=I
 set number
 set relativenumber
 
+" use wild menu
+set wildmenu
+
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
 
@@ -37,8 +40,11 @@ set smartcase
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
 
-" highlight when searching (turn off with :noh)
+" highlight when searching
 set hlsearch
+
+" Turn off search highlighting by pressing \\
+nnoremap <leader>\ :nohlsearch<CR>
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
@@ -64,6 +70,10 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+" create new lines without entering insert mode
+nnoremap <leader>o o<esc>
+nnoremap <leader>O O<esc>
+
 " let FORTRAN have tabs
 let fortran_have_tabs=1
 
@@ -71,5 +81,4 @@ let fortran_have_tabs=1
 set spell
 nnoremap <F7> :setlocal spell! spell?<CR>
 inoremap <F7> <c-o>:setlocal spell! spell?<CR>
-
 
