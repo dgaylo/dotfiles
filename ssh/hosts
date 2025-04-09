@@ -9,6 +9,9 @@ Host Scripts scripts
 Host SuperCloud supercloud
    Hostname txe1-login.mit.edu
    User dgaylo
+Host Engaging engaging
+   Hostname orcd-login003.mit.edu
+   User dgaylo
 # VFRL
 Host Neptune neptune
   HostName vfrl.mit.edu
