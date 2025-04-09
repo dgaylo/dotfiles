@@ -1,4 +1,4 @@
-" Set colorscheme
+" Set color scheme
 set background=light
 colorscheme default
 
@@ -37,6 +37,9 @@ set smartcase
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
 
+" highlight whe searching (turn off with :noh)
+set hlsearch
+
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
@@ -45,11 +48,27 @@ set noerrorbells visualbell t_vb=
 
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
-set mouse+=a
+"set mouse+=a
+
+" Fold using syntax, but diable by default
+set foldmethod=syntax
+set nofoldenable
 
 " Moving lines up and down using Shift-j or Shift-k
 nnoremap <S-j> :m .+1<CR>==
 nnoremap <S-k> :m .-2<CR>==
 
-" let fortran have tabs
+" In insert mode, move normally by using Ctrl
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+
+" let FORTRAN have tabs
 let fortran_have_tabs=1
+
+" turn spelling on and off with F7
+nn <F7> :setlocal spell! spell?<CR>
+
+
+
