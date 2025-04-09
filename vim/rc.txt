@@ -1,6 +1,6 @@
-
-
-" If you open this file in Vim, it'll be syntax highlighted for you.
+" Set colorscheme
+set background=light
+colorscheme default
 
 " Vim is based on Vi. Setting `nocompatible` switches from the default
 " Vi-compatibility mode and enables useful Vim functionality. This
