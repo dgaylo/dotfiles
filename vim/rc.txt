@@ -37,7 +37,7 @@ set smartcase
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
 
-" highlight whe searching (turn off with :noh)
+" highlight when searching (turn off with :noh)
 set hlsearch
 
 " Unbind some useless/annoying default key bindings.
@@ -50,7 +50,7 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 "set mouse+=a
 
-" Fold using syntax, but diable by default
+" Fold using syntax, but disable by default
 set foldmethod=syntax
 set nofoldenable
 
@@ -68,7 +68,8 @@ inoremap <C-l> <Right>
 let fortran_have_tabs=1
 
 " turn spelling on and off with F7
-nn <F7> :setlocal spell! spell?<CR>
-
+set spell
+nnoremap <F7> :setlocal spell! spell?<CR>
+inoremap <F7> <c-o>:setlocal spell! spell?<CR>
 
 
