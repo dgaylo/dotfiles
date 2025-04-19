@@ -24,6 +24,7 @@ alias cls="clear -x"
 
 # typos
 alias gti='git'
+alias sl='ls'
 
 # local bash aliases
 if [ -f ~/.bash_aliases_local ]; then
