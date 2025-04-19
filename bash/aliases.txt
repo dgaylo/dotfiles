@@ -20,7 +20,7 @@ alias lla="ls -lah"
 alias hgrep="history | grep"
 
 # still used to DOS command
-alias cls="clear"
+alias cls="clear -x"
 
 # typos
 alias gti='git'
