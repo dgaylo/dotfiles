@@ -5,6 +5,7 @@ LIST= \
 	vim \
 	bash \
 	ssh \
+	tmux \
 
 
 .PHONY. : all $(LIST)
@@ -33,4 +34,9 @@ $(HOME_DIR)/.ssh/config.d/hosts : $(SRC_DIR)/ssh/hosts $(HOME_DIR)/.ssh/config.d
 $(HOME_DIR)/.ssh/config.d :
 	mkdir -p $@
 
+# tmux setup
+tmux : $(HOME_DIR)/.tmux.conf
+
+$(HOME_DIR)/.tmux.conf : $(SRC_DIR)/tmux/tmux.conf
+	ln -fs $< $@
 
