@@ -6,6 +6,7 @@ LIST= \
 	bash \
 	ssh \
 	tmux \
+	git \
 
 
 .PHONY. : all $(LIST)
@@ -45,3 +46,9 @@ $(HOME_DIR)/.tmux/plugins/tpm : $(SRC_DIR)/tmux/tpm $(HOME_DIR)/.tmux/plugins
 
 $(HOME_DIR)/.tmux/plugins :
 	mkdir -p $@
+
+# git setup
+git : $(HOME_DIR)/.gitconfig
+
+$(HOME_DIR)/.gitconfig : $(SRC_DIR)/git/gitconfig
+	ln -fs $< $@

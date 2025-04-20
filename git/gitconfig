@@ -1,0 +1,11 @@
+[user]
+        name = Declan Gaylo
+        email = dgaylo@mit.edu
+[core]
+	editor = vim
+[commit]
+        gpgsign = true
+
+# For local configuration
+[include]
+	path = ~/.gitconfig.local
