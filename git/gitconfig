@@ -6,6 +6,9 @@
 [commit]
         gpgsign = true
 
-# For local configuration
+[alias]
+	graph = log --graph
+
+# For local configuration, including user.signingkey
 [include]
 	path = ~/.gitconfig.local
