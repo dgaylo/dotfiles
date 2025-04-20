@@ -1,10 +1,9 @@
 # .bash_aliases
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -12,20 +11,25 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 
-alias cls="clear"
+# ls aliases
 alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
 
-# combine grep hostory
+# human readable df
+alias df="df -h"
+
+# combine grep history
 alias hgrep="history | grep"
 
-# alias for dotfile management (inspired by https://mitxela.com/projects/dotfiles_management)
-alias dotfiles='git -C $HOME/.dotfiles' 
+# still used to DOS command
+alias cls="clear -x"
 
 # typos
 alias gti='git'
+alias sl='ls'
 
+# local bash aliases
 if [ -f ~/.bash_aliases_local ]; then
 	source ~/.bash_aliases_local
 fi

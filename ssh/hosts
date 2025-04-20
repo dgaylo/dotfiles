@@ -9,6 +9,9 @@ Host Scripts scripts
 Host SuperCloud supercloud
    Hostname txe1-login.mit.edu
    User dgaylo
+Host Engaging engaging
+   Hostname orcd-login003.mit.edu
+   User dgaylo
 # VFRL
 #Host Neptune neptune
 #  HostName vfrl.mit.edu
@@ -39,12 +42,13 @@ Host github.com github
   user git
   Hostname github.com
 # HPC Servers
-Host Gaffney gaffney
-  Hostname gaffney.navydsrc.hpc.mil
-  User dgaylo
-Host Excalibur excalibur
-  Hostname excalibur.arl.hpc.mil
-  User dgaylo
-Host Koehr koehr
-  Hostname koehr.navydsrc.hpc.mil
-  User dgaylo
+host Nautilus nautilus
+  GSSAPIDelegateCredentials yes
+  hostname nautilus.navydsrc.hpc.mil
+  user dgaylo
+  LogLevel error
+host Carpenter carpenter
+  GSSAPIDelegateCredentials yes
+  hostname carpenter.erdc.hpc.mil
+  user dgaylo
+  LogLevel error

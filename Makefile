@@ -5,6 +5,8 @@ LIST= \
 	vim \
 	bash \
 	ssh \
+	tmux \
+	git \
 
 
 .PHONY. : all $(LIST)
@@ -33,4 +35,20 @@ $(HOME_DIR)/.ssh/config.d/hosts : $(SRC_DIR)/ssh/hosts $(HOME_DIR)/.ssh/config.d
 $(HOME_DIR)/.ssh/config.d :
 	mkdir -p $@
 
+# tmux setup
+tmux : $(HOME_DIR)/.tmux.conf $(HOME_DIR)/.tmux/plugins/tpm
 
+$(HOME_DIR)/.tmux.conf : $(SRC_DIR)/tmux/tmux.conf
+	ln -fs $< $@
+
+$(HOME_DIR)/.tmux/plugins/tpm : $(SRC_DIR)/tmux/tpm $(HOME_DIR)/.tmux/plugins 
+	ln -fs $< $@
+
+$(HOME_DIR)/.tmux/plugins :
+	mkdir -p $@
+
+# git setup
+git : $(HOME_DIR)/.gitconfig
+
+$(HOME_DIR)/.gitconfig : $(SRC_DIR)/git/gitconfig
+	ln -fs $< $@
