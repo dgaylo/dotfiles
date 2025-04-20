@@ -16,6 +16,9 @@ alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
 
+# human readable df
+alias df="df -h"
+
 # combine grep history
 alias hgrep="history | grep"
 
