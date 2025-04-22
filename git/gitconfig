@@ -5,6 +5,8 @@
 	editor = vim
 [commit]
         gpgsign = true
+[push]
+	autoSetupRemote = true
 
 [alias]
 	graph = log --graph
