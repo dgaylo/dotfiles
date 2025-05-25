@@ -1,5 +1,5 @@
 " Set color scheme
-set background=light
+set background=dark
 colorscheme default
 
 " Turn on syntax highlighting.
@@ -82,3 +82,6 @@ set spell
 nnoremap <F7> :setlocal spell! spell?<CR>
 inoremap <F7> <c-o>:setlocal spell! spell?<CR>
 
+" formatting for spelling mistakes
+hi clear SpellBad
+hi SpellBad cterm=reverse
