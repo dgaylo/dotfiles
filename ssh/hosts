@@ -6,9 +6,6 @@ Host Scripts scripts
   Hostname scripts.mit.edu
   User dgaylo
   Port 22
-Host SuperCloud supercloud
-   Hostname txe1-login.mit.edu
-   User dgaylo
 Host Engaging engaging
    Hostname orcd-login003.mit.edu
    User dgaylo
