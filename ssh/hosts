@@ -49,3 +49,9 @@ host Carpenter carpenter
   hostname carpenter.erdc.hpc.mil
   user dgaylo
   LogLevel error
+host Blueback blueback
+  GSSAPIDelegateCredentials yes
+  hostname blueback.navydsrc.hpc.mil
+  user dgaylo
+  LogLevel error
+
