@@ -54,4 +54,9 @@ host Blueback blueback
   hostname blueback.navydsrc.hpc.mil
   user dgaylo
   LogLevel error
+host Barfoot barfoot
+  GSSAPIDelegateCredentials yes
+  hostname barfoot.erdc.hpc.mil
+  user dgaylo
+  LogLevel error
 
