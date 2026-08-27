@@ -77,6 +77,9 @@ nnoremap <leader>O O<esc>
 " let FORTRAN have tabs
 let fortran_have_tabs=1
 
+" Make tabs show up as 4 spaces
+set tabstop=4
+
 " turn spelling on and off with F7
 set spell
 nnoremap <F7> :setlocal spell! spell?<CR>
